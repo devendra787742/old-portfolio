@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devendra Singh | Java Backend &amp; Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Devendra Singh - Java Backend Developer, Full Stack Developer and Software Engineer. Spring Boot, Angular, MySQL, Unity."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/space.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<canvas id="fx-canvas"></canvas>
+<canvas id="space-canvas" aria-hidden="true"></canvas>
+<canvas id="dog-canvas" aria-hidden="true"></canvas>
+<div class="shoot" style="--x:10vw;--d:2s"></div><div class="shoot" style="--x:40vw;--d:5s"></div><div class="shoot" style="--x:60vw;--d:8s"></div>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<div class="page">
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">DS.DEV</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="pixel-bar"><span></span><span></span><span></span><span></span></div>
+      <p class="hero-tag">&lt; Java Backend · Full Stack · Software Engineer &gt;</p>
+      <h1 class="hero-name">Hello, I'm<br><span>Devendra Singh</span></h1>
+      <p class="hero-title">B.Tech CSE (Gaming Technology) · SRM Institute of Science and Technology</p>
+      <p class="hero-desc">Computer Science undergraduate building production-style applications with Java, Spring Boot, MySQL and Angular/React — with a strong foundation in DSA, OOP and RESTful API design. Open to Software Engineer, Java Backend and Full Stack roles.</p>
+      <div class="hero-cta">
+        <a href="mailto:singhdevendra83158@gmail.com" class="btn btn-primary">Get In Touch</a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label">// 01. About</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a Computer Science student specializing in <strong style="color:var(--accent)">Gaming Technology</strong> at SRM Institute of Science and Technology, Chennai. I blend a strong foundation in Java backend engineering, data structures and algorithms with a passion for game development and applied AI.</p>
+        <p>From full-stack platforms with Angular, Spring Boot and JWT-secured APIs, to an AR/VR rehabilitation system with a Unity therapy module, to an explainable phishing-detection tool in Python — I love turning complex problems into clean, scalable solutions.</p>
+        <p>Outside of code, I explore game development with Unity and Unreal Engine, and sharpen my problem-solving through competitive programming. I co-authored an academic paper on a pose-estimation and analytics pipeline for AR/VR therapy.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><span class="stat-num">8.88</span><span class="stat-label">CGPA</span></div>
+        <div class="stat-card"><span class="stat-num">150+</span><span class="stat-label">DSA Problems</span></div>
+        <div class="stat-card"><span class="stat-num">15+</span><span class="stat-label">REST APIs Built</span></div>
+        <div class="stat-card"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <div class="alt-wrap" id="summary">
+    <div class="alt-inner">
+      <p class="section-label">// 02. Summary</p>
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="summary-list reveal">
+        <div class="summary-item"><strong>Java Backend Development</strong> — Spring Boot, Spring Security, Spring MVC, Hibernate/JPA and RESTful APIs with JWT authentication; Oracle Certified Java SE 17 Developer.</div>
+        <div class="summary-item"><strong>Full-Stack Development</strong> — Angular and React frontends backed by Spring Boot and MySQL, with clean separation of concerns and role-based access control.</div>
+        <div class="summary-item"><strong>Data Structures &amp; Algorithms</strong> — Solved 150+ problems in Java and C++, covering graphs, dynamic programming, greedy and search algorithms.</div>
+        <div class="summary-item"><strong>Game &amp; AR/VR Development</strong> — Unity, Unreal Engine and C#; built an immersive VR therapy module for a rehabilitation platform.</div>
+        <div class="summary-item"><strong>Applied Machine Learning</strong> — Building TrustLens AI, an explainable phishing &amp; scam detector using Scikit-learn, TF-IDF and Streamlit.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">// 03. Experience</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div>
+          <div class="exp-title">Software Engineer Intern (Virtual)</div>
+          <div class="exp-sub">DSA &amp; Competitive Programming</div>
+        </div>
+        <span class="exp-date">Jan 2024 – Mar 2024</span>
+      </div>
+      <ul class="exp-list">
+        <li>Solved <strong style="color:var(--txt)">150+ DSA problems</strong> in Java and C++, covering arrays, graphs, dynamic programming, and greedy algorithms.</li>
+        <li>Enhanced solution runtime through time-complexity analysis, ensuring clean, production-quality code.</li>
+        <li>Practised real-world technical interview techniques, improving problem-solving speed under timed conditions.</li>
+        <li>Engaged in code review processes, gaining insights into competitive programming and software engineering best practices.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">// 04. Projects</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-tags">
+          <span class="tag tag-cyan">Angular</span>
+          <span class="tag tag-purple">Spring Boot</span>
+          <span class="tag tag-pink">MySQL</span>
+          <span class="tag tag-cyan">Unity</span>
+          <span class="tag tag-purple">C#</span>
+        </div>
+        <div class="project-name">AR/VR Rehabilitation Therapy System <span style="color:var(--muted);font-size:.7rem;font-weight:700;display:block;margin-top:.3rem">Jan 2026 – May 2026</span></div>
+        <ul class="project-desc">
+          <li>Full-stack platform with an Angular frontend, Spring Boot backend and MySQL database for managing patients and doctors.</li>
+          <li>Doctor dashboard for assigning exercises, analysing progress and monitoring patients, plus an immersive <strong style="color:var(--txt)">VR therapy module in Unity (C#)</strong>.</li>
+          <li>Implemented <strong style="color:var(--txt)">JWT-based authentication</strong> and role-based access control to secure patient and doctor portals.</li>
+          <li>Co-authored an academic paper on the system's pose-estimation and analytics pipeline.</li>
+        </ul>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-tags">
+          <span class="tag tag-cyan">Python</span>
+          <span class="tag tag-purple">Scikit-learn</span>
+          <span class="tag tag-pink">TF-IDF</span>
+          <span class="tag tag-cyan">Streamlit</span>
+          <span class="tag tag-purple">SQLite</span>
+        </div>
+        <div class="project-name">TrustLens AI — Phishing &amp; Scam Detection <span style="color:var(--muted);font-size:.7rem;font-weight:700;display:block;margin-top:.3rem">2026 – Present</span></div>
+        <ul class="project-desc">
+          <li>AI/ML security tool that assesses suspicious messages and URLs and presents an <strong style="color:var(--txt)">interpretable scam-risk result</strong>.</li>
+          <li>Hybrid text-and-URL feature pipeline (Pandas, NumPy, TF-IDF) with Logistic Regression and Random Forest baselines, plus a review-needed outcome for uncertain predictions.</li>
+          <li>Planned explainability via influential text/URL signals, evaluated with precision, recall, F1-score, false-positive rate and a confusion matrix.</li>
+        </ul>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-tags">
+          <span class="tag tag-cyan">Angular</span>
+          <span class="tag tag-purple">Spring Boot</span>
+          <span class="tag tag-pink">MySQL</span>
+          <span class="tag tag-cyan">REST APIs</span>
+        </div>
+        <div class="project-name">Cafe Management System <span style="color:var(--muted);font-size:.7rem;font-weight:700;display:block;margin-top:.3rem">Jan 2025 – Mar 2025</span></div>
+        <ul class="project-desc">
+          <li>Full-stack web app managing order processing, billing and inventory tracking for cafe operations.</li>
+          <li>Designed <strong style="color:var(--txt)">15+ RESTful API endpoints</strong> in Spring Boot with clean frontend-backend separation.</li>
+          <li>Modelled a normalised MySQL schema with full CRUD, supporting real-time inventory updates and transaction history.</li>
+          <li>Integrated Angular reactive forms and HTTP client with lazy loading, improving page-load data efficiency by <strong style="color:var(--txt)">30%</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">// 05. Skills</p>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><div class="skill-category">Languages</div><div class="skill-name">Java · C++ · C</div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Languages</div><div class="skill-name">Python · JavaScript · SQL</div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Backend</div><div class="skill-name">Spring Boot · MVC · Security</div><div class="skill-bar"><div class="skill-fill" style="width:84%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Backend</div><div class="skill-name">Hibernate · JPA · REST · JWT</div><div class="skill-bar"><div class="skill-fill" style="width:84%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Frontend</div><div class="skill-name">Angular · React · Vite</div><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Frontend</div><div class="skill-name">Tailwind CSS · HTML5 · CSS3</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Database</div><div class="skill-name">MySQL · Query Optimization · Firebase</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Core CS</div><div class="skill-name">DSA · OOP · Design Patterns · OS · CN</div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Machine Learning</div><div class="skill-name">Pandas · NumPy · Scikit-learn</div><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Game Development</div><div class="skill-name">Unity · Unreal Engine · C#</div><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">DevOps &amp; Tools</div><div class="skill-name">Git · Docker · Maven · Postman · JUnit</div><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Methodologies</div><div class="skill-name">Agile/Scrum · CI/CD · SDLC</div><div class="skill-bar"><div class="skill-fill" style="width:76%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <p class="section-label">// 06. Certifications</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+      <div class="cert-card reveal"><div class="cert-icon ci-oracle">☕</div><div class="cert-info"><h4>Oracle Certified Professional: Java SE 17 Developer</h4><p>Oracle University · Feb 2026</p><div class="cert-links"><a class="cert-view" href="#" data-cert="oracle">View Certificate</a></div></div></div>
+      <div class="cert-card reveal"><div class="cert-icon ci-google">📊</div><div class="cert-info"><h4>SAP Certified – Data Analyst, SAP Analytics Cloud</h4><p>SAP · Apr 2026 · Valid till Apr 2027</p><div class="cert-links"><a class="cert-view" href="#" data-cert="sap">View Certificate</a><a class="cert-verify" href="https://www.credly.com/badges/b683a8d1-2b17-4acc-afd6-20bb05095cd6" target="_blank" rel="noopener">Verify Online</a></div></div></div>
+      <div class="cert-card reveal"><div class="cert-icon ci-epic">🎮</div><div class="cert-info"><h4>Game Development &amp; Prototyping</h4><p>Epic Games (Coursera) · Apr 2025</p><div class="cert-links"><a class="cert-view" href="#" data-cert="epic">View Certificate</a><a class="cert-verify" href="https://coursera.org/verify/HFKHCL1G4HAH" target="_blank" rel="noopener">Verify Online</a></div></div></div>
+      <div class="cert-card reveal"><div class="cert-icon ci-google">🎨</div><div class="cert-info"><h4>Start the UX Design Process: Empathize, Define &amp; Ideate</h4><p>Google (Coursera) · Aug 2025</p><div class="cert-links"><a class="cert-view" href="#" data-cert="google">View Certificate</a><a class="cert-verify" href="https://coursera.org/verify/8TF92IHX0I5G" target="_blank" rel="noopener">Verify Online</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label">// 07. Education</p>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-timeline reveal">
+      <div class="edu-item">
+        <div class="edu-year">Sep 2023 – May 2027 (Expected)</div>
+        <div class="edu-degree">B.Tech — Computer Science &amp; Engineering (Gaming Technology)</div>
+        <div class="edu-school">SRM Institute of Science and Technology, Chennai</div>
+        <span class="edu-grade">CGPA: 8.88 / 10.0</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2023</div>
+        <div class="edu-degree">Class XII — PCM (RBSE)</div>
+        <div class="edu-school">Adarsh Vidya Mandir Senior Secondary School, Rajasthan</div>
+        <span class="edu-grade">77%</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2021</div>
+        <div class="edu-degree">Class X — MPC (RBSE)</div>
+        <div class="edu-school">Adarsh Vidya Mandir Senior Secondary School, Rajasthan</div>
+        <span class="edu-grade">84.83%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages">
+    <p class="section-label">// 08. Languages</p>
+    <h2 class="section-title">Languages</h2>
+    <div class="lang-grid reveal">
+      <div class="lang-card"><div class="lang-name">Hindi</div><div class="lang-level">Native Proficiency</div></div>
+      <div class="lang-card"><div class="lang-name">English</div><div class="lang-level">Professional Proficiency</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="alt-wrap" id="contact">
+    <div class="alt-inner" style="text-align:center">
+      <p class="section-label" style="text-align:center">// 09. Contact</p>
+      <h2 class="section-title" style="display:block;text-align:center">Get In Touch</h2>
+      <p style="color:var(--muted);font-size:1rem;margin-top:1rem;max-width:500px;margin:1rem auto 0;line-height:1.8;">Open to Software Engineer, Java Backend and Full Stack opportunities. Based in Chennai, Tamil Nadu, India — let's build something great together.</p>
+      <div class="contact-links">
+        <a href="mailto:singhdevendra83158@gmail.com" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email
+        </a>
+        <a href="https://github.com/devendra787742" target="_blank" rel="noopener" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/devendra-singh-8327a7291/" target="_blank" rel="noopener" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 <span>Devendra Singh</span> · All Rights Reserved</footer>
+
+</div>
+
+<script src="js/main.js"></script>
+<div class="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="cert-modal-box">
+    <button class="cert-modal-close" aria-label="Close">&times;</button>
+    <iframe class="cert-frame" title="Certificate PDF"></iframe>
+    <div class="cert-modal-title"></div>
+    <a class="cert-open" target="_blank" rel="noopener">Open PDF in new tab ↗</a>
+  </div>
+</div>
+<script src="js/certificates.js"></script>
+<script src="js/vendor/three.min.js"></script>
+<script src="js/space.js"></script>
+<script src="js/tilt.js"></script>
+</body>
+</html>

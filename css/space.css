@@ -1,0 +1,67 @@
+/* ===== SPACE REDESIGN (additive) ===== */
+:root{--font:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--card:rgba(10,18,38,.62);--border:rgba(120,170,255,.16);--r:14px}
+body::after{display:none}
+#bg-canvas{opacity:.3}
+#space-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.no-webgl body{background:radial-gradient(ellipse at 70% 30%,#14204a,#050a12 60%)}
+nav{background:rgba(6,12,26,.55);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--border)}
+.nav-links a{padding:.35rem .7rem;border-radius:999px}
+.nav-links a.active{background:rgba(0,240,255,.1)}
+.hero-name{letter-spacing:-1px}
+.hero-content{text-shadow:0 2px 24px rgba(5,10,18,.9)}
+.btn{border-radius:999px}
+.stat-card,.summary-item,.exp-card,.project-card,.skill-card,.cert-card,.lang-card,.contact-link{background:var(--card);backdrop-filter:blur(12px);border-radius:var(--r);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.stat-card::before{display:none}
+.project-card,.cert-card,.skill-card{transform-style:preserve-3d;perspective:800px}
+.project-card:hover{transform:translateY(-8px) rotateX(2deg)}
+.tag,.edu-grade,.exp-date,.cert-links a{border-radius:999px}
+.skill-bar{border-radius:3px}.skill-fill{box-shadow:0 0 10px rgba(0,240,255,.6)}
+.edu-item::before{border-radius:50%}
+.section-title,.exp-title,.project-name,.edu-degree{letter-spacing:.2px}
+.cert-modal-box img{border-radius:10px}
+footer{background:rgba(5,10,18,.6);backdrop-filter:blur(10px)}
+.shoot{position:fixed;top:0;left:0;width:120px;height:2px;z-index:1;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,#fff);transform:rotate(30deg);animation:shoot 9s linear infinite;animation-delay:var(--d)}
+@keyframes shoot{0%{opacity:0;transform:translate(var(--x),-5vh) rotate(30deg)}2%{opacity:.9}8%{opacity:0;transform:translate(calc(var(--x) + 45vw),45vh) rotate(30deg)}100%{opacity:0}}
+#sp-tip{position:fixed;z-index:9997;pointer-events:none;display:none;padding:.3rem .7rem;font:700 .72rem var(--font);letter-spacing:1px;color:var(--accent);background:rgba(6,12,26,.85);border:1px solid var(--border);border-radius:999px}
+#sp-info{position:fixed;left:1.5rem;bottom:1.5rem;z-index:50;max-width:260px;display:none;padding:1rem 1.2rem;background:rgba(6,12,26,.8);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:var(--r);font-size:.82rem;line-height:1.6;color:var(--muted)}
+#sp-info b{display:block;color:var(--txt);font-size:.95rem;margin-bottom:.2rem}
+#sp-reset{position:fixed;right:1.5rem;bottom:1.5rem;z-index:50;padding:.6rem 1.1rem;font:700 .68rem var(--font);letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:rgba(6,12,26,.8);border:1px solid var(--border);border-radius:999px;display:none}
+#sp-reset:hover{background:rgba(0,240,255,.12)}
+#dog-canvas{position:fixed;left:0;top:0;width:150px;height:120px;z-index:9990;pointer-events:none;display:none}
+@media(max-width:768px){#sp-info{left:.8rem;bottom:.8rem}#sp-reset{right:.8rem;bottom:.8rem}.shoot{display:none}}
+@media(prefers-reduced-motion:reduce){.shoot{display:none}*{scroll-behavior:auto!important}}
+/* 3D journey readability */
+section:not(#hero){background:linear-gradient(90deg,rgba(5,10,18,.8) 0%,rgba(5,10,18,.5) 55%,rgba(5,10,18,.1) 100%)}
+.reveal{will-change:transform}
+.project-card,.cert-card,.skill-card,.stat-card{transition:transform .25s ease,box-shadow .3s,border-color .3s}
+
+
+/* PDF certificate viewer */
+.cert-modal-box{width:min(1000px,94vw)}
+.cert-frame{width:100%;height:76vh;border:1px solid var(--border);border-radius:10px;background:#fff;box-shadow:0 0 40px rgba(0,240,255,.25)}
+.cert-open{font:700 .72rem var(--font);letter-spacing:1px;text-transform:uppercase;color:var(--accent);text-decoration:none;padding:.4rem .9rem;border:1px solid var(--border);border-radius:999px}
+.cert-open:hover{background:rgba(0,240,255,.12)}
+
+/* ===== MOBILE / TOUCH ===== */
+@media(hover:none),(pointer:coarse){body{cursor:auto}#cur,#cur-ring{display:none!important}}
+@media(max-width:768px){
+  nav{flex-direction:column;align-items:flex-start;gap:.3rem;padding:.55rem 1rem}
+  .nav-logo{font-size:.95rem}
+  .nav-links{flex-wrap:nowrap;overflow-x:auto;width:100%;gap:.3rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{white-space:nowrap;padding:.5rem .75rem;font-size:.66rem}
+  #hero{padding:8rem 1.2rem 3rem}
+  .hero-tag{letter-spacing:2px;font-size:.66rem}
+  .hero-title{font-size:.95rem}
+  .hero-desc{font-size:.92rem;line-height:1.7}
+  .hero-content{text-shadow:0 2px 18px rgba(5,10,18,1)}
+  .projects-grid,.skills-grid,.certs-grid,.summary-list{grid-template-columns:1fr}
+  .exp-card{padding:1.4rem 1.2rem}
+  .cert-card{padding:1.3rem}
+  .btn,.cert-links a,.cert-open{min-height:44px;display:inline-flex;align-items:center}
+  section:not(#hero){background:rgba(5,10,18,.62)}
+  .cert-modal{padding:.6rem}.cert-frame{height:68vh}.cert-modal-close{top:-8px;right:-4px}
+  .lang-card{padding:1.4rem 2rem}
+}
+@media(max-width:380px){.hero-name{font-size:2rem}.stat-num{font-size:1.6rem}}
+@media(max-width:768px){section,[id]{scroll-margin-top:6rem}.project-card{padding:1.3rem}.stat-card{padding:1rem}}
